@@ -52,7 +52,10 @@
   L.marker([41.80, -72.25]).addTo(map) // EDIT marker coordinates
   .bindPopup("University of Connecticut at Storrs"); // EDIT pop-up text message
 
- 
+ var OpenStreetMap_Mapnik = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
     
   </script>
 </body>
